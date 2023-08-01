@@ -62,9 +62,9 @@ namespace update
 
 namespace sah
 {
-    inline const char* FILE_SIGNATURE = "fff"; //"SAH";
-    constexpr int BYTE_LENGTH = 56;
-    constexpr uint32_t FILE_COUNT_KEY = 109;
+    inline const char* FILE_SIGNATURE = "SAH"; //"fff";
+    //constexpr int BYTE_LENGTH = 56; // length
+    //constexpr uint32_t FILE_COUNT_KEY = yourkey; // 123
 
     void open(std::vector<SFile>& patches, bool deleteList);
     void read(const std::string& path, SFolder* folder, std::ifstream* ifs, std::vector<SFile>& patches, bool deleteList);
